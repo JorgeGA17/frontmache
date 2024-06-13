@@ -1,0 +1,29 @@
+<div class="col-md-6 offset-md-3 container-fluid">
+    <h3 class="text-center">
+        Actualización de datos Docente
+    </h3>
+
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>
+               Nombre:                
+            </label>
+            <input type="text" class="form-control" id="nombre" [(ngModel)]="docente.nombre" name="nombre">
+        </div>
+        <div class="form-group">
+            <label>
+               Email:                
+            </label>
+            <input type="text" class="form-control" id="email" [(ngModel)]="docente.email" name="email">
+        </div>
+        <div class="form-group">
+            <label>
+               password:                
+            </label>
+            <input type="text" class="form-control" id="password" [(ngModel)]="docente.password" name="password">
+        </div>
+
+        <button class="btn btn-success">Guardar</button>
+
+    </form>
+</div>
