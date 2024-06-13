@@ -34,5 +34,5 @@ export class DocentesService {
     return this.http.delete(this.urlEndPoint+'/'+id);
 
   }
-
+    
 }
