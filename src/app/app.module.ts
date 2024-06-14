@@ -8,19 +8,27 @@ import { HttpClientModule } from '@angular/common/http';
 import { RegistrarDocenteComponent } from './registrar-docente/registrar-docente.component';
 import { FormsModule } from '@angular/forms';
 import { ActualizarDocenteComponent } from './actualizar-docente/actualizar-docente.component';
+import { MatButtonModule } from '@angular/material/button';
+import {MatMenuModule} from '@angular/material/menu';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaDocentesComponent,
     RegistrarDocenteComponent,
-    ActualizarDocenteComponent
+    ActualizarDocenteComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatMenuModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

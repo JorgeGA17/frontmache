@@ -1,22 +1,63 @@
+
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <ul class="navbar-nav">
-    <li class="nav-item">
-      <a routerLink="docentes" routerLinkActive="active" class="nav-link">
-        Lista de Docentes
-      </a>
-    </li>
 
-    <li class="nav-item">
-      <a routerLink="registrar" routerLinkActive="active" class="nav-link">
-        Registrar Docente
-      </a>
-    </li>
-  </ul>
+ <!-- Botones barra --> 
+ <div style="margin-left: 20px">
+  <button mat-flat-button routerLink="/home" color="black">Home</button>
+</div>
+
+  <div>
+    <button mat-flat-button [matMenuTriggerFor]="docente" color="black">Docentes</button>
+    <mat-menu #docente="matMenu">
+      <button mat-menu-item routerLink="/docentes">Lista de Docentes</button>
+      <button mat-menu-item routerLink="/registrar">Registrar Docentes</button>
+    </mat-menu>
+  </div>
+
+  <div>
+    <button mat-flat-button [matMenuTriggerFor]="estudiante" color="black">Estudiantes</button>
+    <mat-menu #estudiante="matMenu">
+      <button mat-menu-item routerLink="/docentes">Lista de Estudiantes</button>
+      <button mat-menu-item routerLink="/registrar">Registrar Estudiantes</button>
+    </mat-menu>
+  </div>
+
+  <div>
+    <button mat-flat-button [matMenuTriggerFor]="secretario" color="black">Secreatario Academico</button>
+    <mat-menu #secretario="matMenu">
+      <button mat-menu-item routerLink="/docentes">Lista de Secretarios</button>
+      <button mat-menu-item routerLink="/registrar">Registrar Secretarios</button>
+    </mat-menu>
+  </div>
+
+  <div>
+    <button mat-flat-button [matMenuTriggerFor]="programa" color="black">Programa de Estudios</button>
+    <mat-menu #programa="matMenu">
+      <button mat-menu-item routerLink="/docentes">Lista de Programas</button>
+      <button mat-menu-item routerLink="/registrar">Registrar Programa</button>
+    </mat-menu>
+  </div>
+
+  <div>
+    <button mat-flat-button [matMenuTriggerFor]="unidad" color="black">Unidad Didactica</button>
+    <mat-menu #unidad="matMenu">
+      <button mat-menu-item routerLink="/docentes">Lista de Unidades</button>
+      <button mat-menu-item routerLink="/registrar">Registrar Unidad</button>
+    </mat-menu>
+  </div>
+
+  <div>
+    <button mat-flat-button [matMenuTriggerFor]="periodo" color="black">Periodo Academico</button>
+    <mat-menu #periodo="matMenu">
+      <button mat-menu-item routerLink="/docentes">Lista de Periodos</button>
+      <button mat-menu-item routerLink="/registrar">Registrar Periodos</button>
+    </mat-menu>
+  </div>
+
+
+</ul>
 </nav>
-
-<h1 class="text-center">
-  Proyecto Mache Notas
-</h1>
 
 <div class="container fluid">
  <router-outlet></router-outlet>

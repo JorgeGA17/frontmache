@@ -3,7 +3,6 @@ import { Docente } from '../models/docente';
 import { DocentesService } from '../services/docente.service';
 import { Router } from '@angular/router';
 
-
 @Component({
   selector: 'app-lista-docentes',
   templateUrl: './lista-docentes.component.html',
