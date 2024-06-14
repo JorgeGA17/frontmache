@@ -12,6 +12,9 @@ import { MatButtonModule } from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
+import { ListaEstudiantesComponent } from './Estudiante/lista-estudiantes/lista-estudiantes.component';
+import { RegistrarEstudianteComponent } from './Estudiante/registrar-estudiante/registrar-estudiante.component';
+import { ActualizarEstudianteComponent } from './Estudiante/actualizar-estudiante/actualizar-estudiante.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,9 @@ import { HomeComponent } from './home/home.component';
     RegistrarDocenteComponent,
     ActualizarDocenteComponent,
     HomeComponent,
+    ListaEstudiantesComponent,
+    RegistrarEstudianteComponent,
+    ActualizarEstudianteComponent,
   ],
   imports: [
     BrowserModule,
