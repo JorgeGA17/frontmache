@@ -15,6 +15,7 @@ import { RegistrarUnidadComponent } from './Unidad/registrar-unidad/registrar-un
 import { ActualizarUnidadComponent } from './Unidad/actualizar-unidad/actualizar-unidad.component';
 import { ListaProgramasComponent } from './Programa/lista-programas/lista-programas.component';
 import { ActualizarProgramaComponent } from './Programa/actualizar-programa/actualizar-programa.component';
+import { RegistrarProgramaComponent } from './Programa/registrar-programa/registrar-programa.component';
 
 const routes: Routes = [
   { path: 'home', component:HomeComponent},
@@ -33,7 +34,7 @@ const routes: Routes = [
   {path:'registrar-unidad', component:RegistrarUnidadComponent},
   {path:'actualizar-unidad/:id', component:ActualizarUnidadComponent},
   {path:'lista-programas', component:ListaProgramasComponent},
-  {path:'registrar-programa', component:RegistrarUnidadComponent},
+  {path:'registrar-programa', component:RegistrarProgramaComponent},
   {path:'actualizar-programa/:id', component:ActualizarProgramaComponent}
 
   
