@@ -9,6 +9,7 @@ import swal from 'sweetalert';
   templateUrl: './actualizar-docente.component.html',
   styleUrl: './actualizar-docente.component.css'
 })
+
 export class ActualizarDocenteComponent implements OnInit{
  
   id:number;
@@ -23,7 +24,7 @@ export class ActualizarDocenteComponent implements OnInit{
   }
 
   irListaDocentes(){
-    this.router.navigate(['/docentes']);
+    this.router.navigate(['/lista-docentes']);
     swal('Docente actualizado',`El docente ${this.docente.nombre} ha sido actualizado con exito`,`success`);
   }
 

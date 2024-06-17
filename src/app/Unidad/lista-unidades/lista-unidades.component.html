@@ -1,0 +1,33 @@
+<h2 class="text-center"> Lista Secretarios </h2>
+<div class="container-fluid">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr >
+        <th scope="col">#</th>
+        <th scope="col">id</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Duracion</th>
+        <th scope="col">Creditaje</th>
+        <th scope="col">Calificacion</th>
+        <th scope="col">Acciones</th>
+     </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let unidad of unidades; let i=index">
+      
+      <td>{{i+1}}</td>
+      <td>{{unidad.id}}</td>   
+      <td>{{unidad.nombre}}</td>  
+      <td>{{unidad.duracion}}</td>
+      <td>{{unidad.creditaje}}</td>
+      <td>{{unidad.calificacion}}</td>
+      <td>
+        <button (click)="updateUnidad(unidad.id)" class="btn btn-success"> Editar </button>
+        <button (click)="deleteUnidad(unidad.id)" class="btn btn-danger ml-2"> Eliminar </button>
+      </td>
+      
+     </tr>
+    
+    </tbody>
+  </table>
+</div>

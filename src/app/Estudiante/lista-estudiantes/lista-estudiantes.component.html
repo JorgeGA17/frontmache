@@ -1,1 +1,29 @@
-<p>lista-estudiantes works!</p>
+<h2 class="text-center"> Lista Estudiantes </h2>
+<div class="container-fluid">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr >
+        <th scope="col">#</th>
+        <th scope="col">id</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Email</th>
+        <th scope="col">Acciones</th>
+     </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let estudiante of estudiantes; let i=index">
+      
+      <td>{{i+1}}</td>
+      <td>{{estudiante.id}}</td>   
+      <td>{{estudiante.nombre}}</td>  
+      <td>{{estudiante.email}}</td>
+      <td>
+        <button (click)="updateEstudiante(estudiante.id)" class="btn btn-success"> Editar </button>
+        <button (click)="deleteEstudiante(estudiante.id)" class="btn btn-danger ml-2"> Eliminar </button>
+      </td>
+      
+     </tr>
+    
+    </tbody>
+  </table>
+</div>

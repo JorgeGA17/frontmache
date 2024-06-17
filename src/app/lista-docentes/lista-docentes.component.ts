@@ -26,7 +26,7 @@ export class ListaDocentesComponent implements OnInit {
     }
 
     updateDocente(id:number){
-      this.router.navigate(['actualizar',id]);
+      this.router.navigate(['actualizar-docente',id]);
     }
 
     deleteDocente(id:number){

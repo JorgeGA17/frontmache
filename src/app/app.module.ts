@@ -15,6 +15,15 @@ import { HomeComponent } from './home/home.component';
 import { ListaEstudiantesComponent } from './Estudiante/lista-estudiantes/lista-estudiantes.component';
 import { RegistrarEstudianteComponent } from './Estudiante/registrar-estudiante/registrar-estudiante.component';
 import { ActualizarEstudianteComponent } from './Estudiante/actualizar-estudiante/actualizar-estudiante.component';
+import { ActualizarSecretarioComponent } from './Secretario/actualizar-secretario/actualizar-secretario.component';
+import { ListaSecretariosComponent } from './Secretario/lista-secretarios/lista-secretarios.component';
+import { RegistrarSecretarioComponent } from './Secretario/registrar-secretario/registrar-secretario.component';
+import { ListaUnidadesComponent } from './Unidad/lista-unidades/lista-unidades.component';
+import { RegistrarUnidadComponent } from './Unidad/registrar-unidad/registrar-unidad.component';
+import { ActualizarUnidadComponent } from './Unidad/actualizar-unidad/actualizar-unidad.component';
+import { ListaProgramasComponent } from './Programa/lista-programas/lista-programas.component';
+import { RegistrarProgramaComponent } from './Programa/registrar-programa/registrar-programa.component';
+import { ActualizarProgramaComponent } from './Programa/actualizar-programa/actualizar-programa.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +35,15 @@ import { ActualizarEstudianteComponent } from './Estudiante/actualizar-estudiant
     ListaEstudiantesComponent,
     RegistrarEstudianteComponent,
     ActualizarEstudianteComponent,
+    ActualizarSecretarioComponent,
+    ListaSecretariosComponent,
+    RegistrarSecretarioComponent,
+    ListaUnidadesComponent,
+    RegistrarUnidadComponent,
+    ActualizarUnidadComponent,
+    ListaProgramasComponent,
+    RegistrarProgramaComponent,
+    ActualizarProgramaComponent,
   ],
   imports: [
     BrowserModule,

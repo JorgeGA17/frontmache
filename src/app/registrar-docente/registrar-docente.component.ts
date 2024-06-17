@@ -27,7 +27,7 @@ export class RegistrarDocenteComponent implements OnInit{
   }
 
   irListaEmpleados(){
-    this.router.navigate(['/docentes'])
+    this.router.navigate(['/lista-docentes'])
   }
 
   onSubmit(){

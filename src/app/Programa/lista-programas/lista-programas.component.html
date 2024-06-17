@@ -1,0 +1,31 @@
+<h2 class="text-center"> Lista Programas </h2>
+<div class="container-fluid">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr >
+        <th scope="col">#</th>
+        <th scope="col">id</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Descripcion</th>
+        <th scope="col">Duracion</th>
+        <th scope="col">Acciones</th>
+     </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let programa of programas; let i=index">
+      
+      <td>{{i+1}}</td>
+      <td>{{programa.id}}</td>   
+      <td>{{programa.nombre}}</td>  
+      <td>{{programa.descripcion}}</td>
+      <td>{{programa.duracion}}</td>
+      <td>
+        <button (click)="updatePrograma(programa.id)" class="btn btn-success"> Editar </button>
+        <button (click)="deletePrograma(programa.id)" class="btn btn-danger ml-2"> Eliminar </button>
+      </td>
+      
+     </tr>
+    
+    </tbody>
+  </table>
+</div>
