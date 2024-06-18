@@ -1,0 +1,29 @@
+<div class="col-md-6 offset-md-3 container-fluid">
+    <h3 class="text-center">
+        Actualización de datos Docente
+    </h3>
+
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>
+               Nombre:                
+            </label>
+            <input type="text" class="form-control" id="nombre" [(ngModel)]="periodo.nombre" name="nombre">
+        </div>
+        <div class="form-group">
+            <label>
+               Fecha Inicio:                
+            </label>
+            <input type="date" id="inicio" [(ngModel)]="periodo.inicio" name="inicio">
+        </div>
+        <div class="form-group">
+            <label>
+               Fecha Fin:                
+            </label>
+            <input type="date" id="fin" [(ngModel)]="periodo.fin" name="fin">
+        </div>
+
+        <button class="btn btn-success">Guardar</button>
+
+    </form>
+</div>

@@ -1,0 +1,30 @@
+<h2 class="text-center"> Lista Periodos</h2>
+<div class="container-fluid">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr >
+        <th scope="col">#</th>
+        <th scope="col">id</th>
+        <th scope="col">Inicio</th>
+        <th scope="col">Fin</th>
+        <th scope="col">Acciones</th>
+     </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let periodo of periodos let i=index">
+      
+      <td>{{i+1}}</td>
+      <td>{{periodo.id}}</td>   
+      <td>{{periodo.nombre}}</td>  
+      <td>{{periodo.inicio}}</td>
+      <td>{{periodo.fin}}</td>
+      <td>
+        <button (click)="updatePeriodo(periodo.id)" class="btn btn-success"> Editar </button>
+        <button (click)="deletePeriodo(periodo.id)" class="btn btn-danger ml-2"> Eliminar </button>
+      </td>
+      
+     </tr>
+    
+    </tbody>
+  </table>
+</div>

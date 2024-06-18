@@ -16,6 +16,9 @@ import { ActualizarUnidadComponent } from './Unidad/actualizar-unidad/actualizar
 import { ListaProgramasComponent } from './Programa/lista-programas/lista-programas.component';
 import { ActualizarProgramaComponent } from './Programa/actualizar-programa/actualizar-programa.component';
 import { RegistrarProgramaComponent } from './Programa/registrar-programa/registrar-programa.component';
+import { ActualizarPeriodoComponent } from './periodo/actualizar-periodo/actualizar-periodo.component';
+import { RegistrarPeriodoComponent } from './periodo/registrar-periodo/registrar-periodo.component';
+import { ListaPeriodosComponent } from './periodo/lista-periodos/lista-periodos.component';
 
 const routes: Routes = [
   { path: 'home', component:HomeComponent},
@@ -35,7 +38,11 @@ const routes: Routes = [
   {path:'actualizar-unidad/:id', component:ActualizarUnidadComponent},
   {path:'lista-programas', component:ListaProgramasComponent},
   {path:'registrar-programa', component:RegistrarProgramaComponent},
-  {path:'actualizar-programa/:id', component:ActualizarProgramaComponent}
+  {path:'actualizar-programa/:id', component:ActualizarProgramaComponent},
+  {path:'lista-periodos', component:ListaPeriodosComponent},
+  {path:'registrar-periodo', component:RegistrarPeriodoComponent},
+  {path:'actualizar-periodo/:id', component:ActualizarPeriodoComponent}
+
 
   
 ];

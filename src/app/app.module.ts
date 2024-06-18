@@ -24,6 +24,9 @@ import { ActualizarUnidadComponent } from './Unidad/actualizar-unidad/actualizar
 import { ListaProgramasComponent } from './Programa/lista-programas/lista-programas.component';
 import { RegistrarProgramaComponent } from './Programa/registrar-programa/registrar-programa.component';
 import { ActualizarProgramaComponent } from './Programa/actualizar-programa/actualizar-programa.component';
+import { ActualizarPeriodoComponent } from './periodo/actualizar-periodo/actualizar-periodo.component';
+import { RegistrarPeriodoComponent } from './periodo/registrar-periodo/registrar-periodo.component';
+import { ListaPeriodosComponent } from './periodo/lista-periodos/lista-periodos.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +47,9 @@ import { ActualizarProgramaComponent } from './Programa/actualizar-programa/actu
     ListaProgramasComponent,
     RegistrarProgramaComponent,
     ActualizarProgramaComponent,
+    ActualizarPeriodoComponent,
+    RegistrarPeriodoComponent,
+    ListaPeriodosComponent,
   ],
   imports: [
     BrowserModule,
