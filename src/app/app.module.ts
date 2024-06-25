@@ -27,6 +27,9 @@ import { ActualizarProgramaComponent } from './Programa/actualizar-programa/actu
 import { ActualizarPeriodoComponent } from './periodo/actualizar-periodo/actualizar-periodo.component';
 import { RegistrarPeriodoComponent } from './periodo/registrar-periodo/registrar-periodo.component';
 import { ListaPeriodosComponent } from './periodo/lista-periodos/lista-periodos.component';
+import { HeaderComponent } from './home/header/header.component';
+import { SliderComponent } from './home/slider/slider.component';
+import { FooterComponent } from './home/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +53,9 @@ import { ListaPeriodosComponent } from './periodo/lista-periodos/lista-periodos.
     ActualizarPeriodoComponent,
     RegistrarPeriodoComponent,
     ListaPeriodosComponent,
+    HeaderComponent,
+    SliderComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

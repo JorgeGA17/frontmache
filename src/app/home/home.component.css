@@ -1,0 +1,11 @@
+.header {
+    background-color: #007bff;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    color: #ddd;
+}
