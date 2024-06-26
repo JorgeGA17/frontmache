@@ -1,65 +1,87 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Instituto Mache</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <ul class="navbar-nav">
-
- <!-- Botones barra --> 
- <div style="margin-left: 20px">
-  <button mat-flat-button routerLink="/home" color="black">Home</button>
-</div>
-
-  <div>
-    <button mat-flat-button [matMenuTriggerFor]="docente" color="black">Docentes</button>
-    <mat-menu #docente="matMenu">
-      <button mat-menu-item routerLink="/lista-docentes">Lista de Docentes</button>
-      <button mat-menu-item routerLink="/registrar-docente">Registrar Docentes</button>
-    </mat-menu>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <!-- Home -->
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/home">Home</a>
+      </li>
+      
+      <!-- Docentes -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="docenteDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+          Docentes
+        </a>
+        <div class="dropdown-menu" aria-labelledby="docenteDropdown">
+          <a class="dropdown-item" routerLink="/lista-docentes">Lista de Docentes</a>
+          <a class="dropdown-item" routerLink="/registrar-docente">Registrar Docentes</a>
+        </div>
+      </li>
+      
+      <!-- Estudiantes -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="estudianteDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+          Estudiantes
+        </a>
+        <div class="dropdown-menu" aria-labelledby="estudianteDropdown">
+          <a class="dropdown-item" routerLink="/lista-estudiantes">Lista de Estudiantes</a>
+          <a class="dropdown-item" routerLink="/registrar-estudiante">Registrar Estudiantes</a>
+        </div>
+      </li>
+      
+      <!-- Secretario Academico -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="secretarioDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+          Secretario Academico
+        </a>
+        <div class="dropdown-menu" aria-labelledby="secretarioDropdown">
+          <a class="dropdown-item" routerLink="/lista-secretarios">Lista de Secretarios</a>
+          <a class="dropdown-item" routerLink="/registrar-secretario">Registrar Secretarios</a>
+        </div>
+      </li>
+      
+      <!-- Programa de Estudios -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="programaDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+          Programa de Estudios
+        </a>
+        <div class="dropdown-menu" aria-labelledby="programaDropdown">
+          <a class="dropdown-item" routerLink="/lista-programas">Lista de Programas</a>
+          <a class="dropdown-item" routerLink="/registrar-programa">Registrar Programa</a>
+        </div>
+      </li>
+      
+      <!-- Unidad Didactica -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="unidadDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+          Unidad Didactica
+        </a>
+        <div class="dropdown-menu" aria-labelledby="unidadDropdown">
+          <a class="dropdown-item" routerLink="/lista-unidades">Lista de Unidades</a>
+          <a class="dropdown-item" routerLink="/registrar-unidad">Registrar Unidad</a>
+        </div>
+      </li>
+      
+      <!-- Periodo Academico -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="periodoDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+          Periodo Academico
+        </a>
+        <div class="dropdown-menu" aria-labelledby="periodoDropdown">
+          <a class="dropdown-item" routerLink="/lista-periodos">Lista de Periodos</a>
+          <a class="dropdown-item" routerLink="/registrar-periodo">Registrar Periodos</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+    </form>
   </div>
-
-  <div>
-    <button mat-flat-button [matMenuTriggerFor]="estudiante" color="black">Estudiantes</button>
-    <mat-menu #estudiante="matMenu">
-      <button mat-menu-item routerLink="/lista-estudiantes">Lista de Estudiantes</button>
-      <button mat-menu-item routerLink="/registrar-estudiante">Registrar Estudiantes</button>
-    </mat-menu>
-  </div>
-
-  <div>
-    <button mat-flat-button [matMenuTriggerFor]="secretario" color="black">Secreatario Academico</button>
-    <mat-menu #secretario="matMenu">
-      <button mat-menu-item routerLink="/lista-secretarios">Lista de Secretarios</button>
-      <button mat-menu-item routerLink="/registrar-secretario">Registrar Secretarios</button>
-    </mat-menu>
-  </div>
-
-  <div>
-    <button mat-flat-button [matMenuTriggerFor]="programa" color="black">Programa de Estudios</button>
-    <mat-menu #programa="matMenu">
-      <button mat-menu-item routerLink="/lista-programas">Lista de Programas</button>
-      <button mat-menu-item routerLink="/registrar-programa">Registrar Programa</button>
-    </mat-menu>
-  </div>
-
-  <div>
-    <button mat-flat-button [matMenuTriggerFor]="unidad" color="black">Unidad Didactica</button>
-    <mat-menu #unidad="matMenu">
-      <button mat-menu-item routerLink="/lista-unidades">Lista de Unidades</button>
-      <button mat-menu-item routerLink="/registrar-unidad">Registrar Unidad</button>
-    </mat-menu>
-  </div>
-
-  <div>
-    <button mat-flat-button [matMenuTriggerFor]="periodo" color="black">Periodo Academico</button>
-    <mat-menu #periodo="matMenu">
-      <button mat-menu-item routerLink="/lista-periodos">Lista de Periodos</button>
-      <button mat-menu-item routerLink="/registrar-periodo">Registrar Periodos</button>
-    </mat-menu>
-  </div>
-
-
-</ul>
 </nav>
 
-<div>
- <router-outlet></router-outlet>
-</div>
-   
+  <router-outlet></router-outlet>

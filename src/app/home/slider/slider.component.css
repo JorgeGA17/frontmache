@@ -1,4 +1,3 @@
-.carousel-inner img {
-    width: 100%;
-    height: auto;
+.carousel-inner {
+   max-height: 39rem;
 }
