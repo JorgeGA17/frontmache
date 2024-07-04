@@ -30,6 +30,7 @@ import { ListaPeriodosComponent } from './periodo/lista-periodos/lista-periodos.
 import { HeaderComponent } from './home/header/header.component';
 import { SliderComponent } from './home/slider/slider.component';
 import { FooterComponent } from './home/footer/footer.component';
+import { FilterPipe } from './pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { FooterComponent } from './home/footer/footer.component';
     HeaderComponent,
     SliderComponent,
     FooterComponent,
+    FilterPipe,
   ],
   imports: [
     BrowserModule,
