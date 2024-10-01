@@ -13,7 +13,8 @@ export class ListaDocentesComponent implements OnInit {
   docentes: Docente[];
 
   constructor(private docenteServicie:DocentesService, private router:Router){}
-   filterDocente=''; 
+   
+  filterDocente=''; 
 
   ngOnInit(): void {
     this.getDocentes();
